@@ -43,6 +43,25 @@
     .jl-menu {
         display: none;
     }
+
+    .jl-btn-contact {
+        width: 45px;
+        height: 45px;
+        display: block;
+        background-color: #2CCB69;
+        background-image: url("../imagens/icon-contact-close.svg");
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 45px;
+        right: 45px;
+        border-radius: 50%;
+        z-index: 200;
+        transition: all 0.2s ease-out;
+    }
+
+    .jl-btn-contact:hover {
+        background-position-y: -45px;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -83,7 +102,7 @@
 
     .jl-menu a:before {
         content: '';
-        width: 0;
+        width: 100%;
         height: 4px;
         background-color: #2CCB69;
         display: block;
@@ -92,10 +111,12 @@
         left: 0;
         transition: all 0.2s ease-out;
         border-radius: 1px;
+        transform: scale(0, 1);
+        transform-origin: center left;
     }
 
     .jl-menu a:hover:before {
-        width: 100%;
+        transform: scale(1, 1)
     }
 
 }
@@ -111,3 +132,38 @@
 @media screen and (min-width: 1600px) {
     
 }
+
+/* classes utilitárias */
+
+.jl-text-green {
+    color: #2CCB69;
+}
+
+.jl-text-dark {
+    color: #4D4C4C;
+}
+
+.jl-text-light {
+    color: #BCBCBC;
+}
+
+.jl-text-black {
+    color: #000;
+}
+
+.jl-bg-green {
+    background-color: #2CCB69;
+}
+
+.jl-bg-dark {
+    background-color: #4D4C4C;
+}
+
+.jl-bg-light {
+    background-color: #BCBCBC;
+}
+
+.jl-bg-black {
+    background-color: #000;
+}
+
