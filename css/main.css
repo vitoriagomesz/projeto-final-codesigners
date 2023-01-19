@@ -65,10 +65,6 @@ p {
         transition: all 0.2s ease-out;
     }
 
-    .jl-btn-contact:hover {
-        background-position-y: -45px;
-    }
-
     .jl-contact-info {
         width: 245px;
         height: 165px;
@@ -77,6 +73,7 @@ p {
         bottom: 115px;
         right: 65px;
         z-index: 200;
+        display: none;
     }
 
     .jl-contact-info-inner {
@@ -203,7 +200,7 @@ p {
     
 }
 
-/* classes utilitárias */
+/* CLASSES UTILITÁRIAS - adicionadas dentro do html */ 
 
 .jl-title {
     font-family: 'Abril Fatface', serif;
@@ -242,3 +239,13 @@ p {
     background-color: #000;
 }
 
+
+/* CLASSES COMPORTAMENTOS */
+
+.jl-is-open {
+    display: block;
+}
+
+.jl-change-icon {
+    background-position-y: -45px;
+}
