@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -62,6 +68,70 @@
     .jl-btn-contact:hover {
         background-position-y: -45px;
     }
+
+    .jl-contact-info {
+        width: 245px;
+        height: 165px;
+        padding: 25px;
+        position: fixed;
+        bottom: 115px;
+        right: 65px;
+        z-index: 200;
+    }
+
+    .jl-contact-info-inner {
+        display: table;
+        width: 100%;
+        float: right;
+    }
+
+    .jl-contact-info-inner p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .jl-social-links {
+        width: 100%;
+        height: 45px;
+        display: block;
+        position: relative;
+        left: -12px;
+        margin-top: 7px;
+    }
+
+    .jl-social {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+    }
+
+    .jl-social > img {
+        width: 20px;
+        height: auto;
+        display: block;
+        margin: 13px auto 0;
+    }
+
+    .jl-corner {
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: right;
+        display: relative;
+
+    }
+
+    .jl-corner:after {
+        content: '';
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        bottom: -23px;
+        right: -1px;
+        background: transparent url("../imagens/corner.svg") no-repeat;
+    }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -134,6 +204,11 @@
 }
 
 /* classes utilitárias */
+
+.jl-title {
+    font-family: 'Abril Fatface', serif;
+    font-weight: 400;
+}
 
 .jl-text-green {
     color: #2CCB69;
