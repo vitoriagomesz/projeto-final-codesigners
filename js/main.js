@@ -1,3 +1,15 @@
+//DECLARANDO VARIAVÉIS
+var btnContact = document.querySelector('.jl-btn-contact');
+
+//PAGE PRELOADER
+window.addEventListener('load', function() {
+    var pagePreloader = document.querySelector('.jl-preloader');
+    pagePreloader.classList.add('jl-fade-out');
+
+    setTimeout(function () {
+        pagePreloader.getElementsByClassName.display = 'none';
+    }, 2000)  
+});
 
 // TOGGLE CLICK NO BOTÃO DE CONTATO
 

@@ -10,14 +10,39 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* ANIMAÇÕES */
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+
 @media screen and (min-width: 320px) {
 
-    .jl-page-wrapper {
+    .jl-page-wrapper, .jl-preloader {
         width: 100%;
         height: 100vh;
         display: block;
         background-color: #1C1C1C;
         border: 30px solid #000;
+    }
+
+    .jl-preloader {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .jl-preloader-inner {
+        margin-top: -45px;
     }
 
     .jl-topbar {
@@ -223,6 +248,8 @@ p {
     color: #000;
 }
 
+/* BACKGROUND */
+
 .jl-bg-green {
     background-color: #2CCB69;
 }
@@ -239,6 +266,51 @@ p {
     background-color: #000;
 }
 
+/* MARGIN */
+
+.jl-mar-15 {
+    margin: 15px;
+}
+
+.jl-mar-top-15 {
+    margin-top: 15px;
+}
+
+.jl-mar-right-15 {
+    margin-right: 15px;
+}
+
+.jl-mar-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.jl-mar-left-15 {
+    margin-left: 15px;
+}
+
+/* PADDING */
+
+.jl-pad-15 {
+    padding: 15px;
+}
+
+.jl-pad-top-15 {
+    padding-top: 15px;
+}
+
+.jl-pad-right-15 {
+    padding-right: 15px;
+}
+
+.jl-pad-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.jl-pad-left-15 {
+    padding-left: 15px;
+}
+
+
 
 /* CLASSES COMPORTAMENTOS */
 
@@ -248,4 +320,8 @@ p {
 
 .jl-change-icon {
     background-position-y: -45px;
+}
+
+.jl-fade-out {
+    animation: fadeOut 2s forwards ease-out;
 }
