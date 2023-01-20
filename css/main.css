@@ -24,7 +24,7 @@ p {
     .jl-page-wrapper, .jl-preloader {
         width: 100%;
         height: 100vh;
-        display: block;
+        display: table;
         background-color: #1C1C1C;
         border: 30px solid #000;
     }
@@ -152,6 +152,22 @@ p {
         bottom: -23px;
         right: -1px;
         background: transparent url("../imagens/corner.svg") no-repeat;
+    }
+
+/**********HOME***********/
+
+    .jl-display-text {
+        margin-top: 10%;
+    }
+
+    .jl-tittle-big {
+        font-size: 120px;
+    }
+
+    #jl-home-presentation {
+        background-image: url('../imagens/joao-lemon-designer-home.png');
+        background-repeat: no-repeat;
+        background-position: 50% bottom;
     }
 
 }
@@ -310,6 +326,15 @@ p {
     padding-left: 15px;
 }
 
+/* fULL HEIGHT */
+
+.jl-full-height {
+    height: 100vh;
+}
+
+.jl-first-section {
+    height: calc(100vh - 30px);
+}
 
 
 /* CLASSES COMPORTAMENTOS */
