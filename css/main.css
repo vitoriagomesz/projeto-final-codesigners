@@ -435,6 +435,50 @@ p {
     height: calc(100vh - 30px);
 }
 
+/* BOTÕES */
+
+.jl-btn {
+    display: table;
+    border: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition:  all 0.2s ease-out;
+}
+
+.jl-btn-medium {
+    height: 38px;
+    padding: 0 27px;
+    border-radius: 19px;
+    font-size: 14px;
+}
+
+.jl-btn-large {
+    height: 45px;
+    padding: 0 35px;
+    border-radius: 23px;
+    font-size: 16px;
+}
+
+.jl-btn-green {
+    background-color: #2CCB69;
+    color:#000;
+}
+
+.jl-btn-green:hover {
+    background-color: rgba(6, 135, 55);
+    color:#fff;
+}
+
+.jl-btn-dark {
+    background-color: #151515;
+    color:#2CCB69;
+}
+
+.jl-btn-dark:hover {
+    background-color: #2f2f2f;
+    color: #fff;
+}
 
 /* CLASSES COMPORTAMENTOS */
 
