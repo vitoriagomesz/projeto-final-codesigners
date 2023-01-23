@@ -21,6 +21,63 @@
         </div>
     </div>
 
+    <div class="jl-overlay"></div>
+
+    <div class="jl-modal jl-bg-black">
+        <div class="jl-modal-header">
+            <h1 class="jl-title jl-text-green">
+                Solicite um orçamento
+            </h1>
+
+            <button class="jl-close-modal">
+                X
+            </button>
+        </div>
+
+        <div class="jl-modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="jl-text-light">Por favor informe os dados abaixo e eu entrarei em contato com você o mais breve possível.</p>
+                </div>
+            </div>
+            <div class="row jl-mar-top-15">
+                <div class="col-sm-12">
+                    <form class="jl-form">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                                <label for="Nome" class="jl-text-light">Nome</label>
+                                <input type="text" nome="Nome" id="jl-nome" class="jl-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                                <label for="Email" class="jl-text-light">Email</label>
+                                <input type="email" nome="Email" id="jl-email" class="jl-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                                <label for="Telefone" class="jl-text-light">Telefone</label>
+                                <input type="tel" nome="Telefone" id="jl-telefone" class="jl-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                                <label for="Site" class="jl-text-light">Site</label>
+                                <input type="text" nome="Site" id="jl-site" class="jl-field" />
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 jl-mar-top-15 jl-mar-bottom-15">
+                                <label for="Mensagem" class="jl-text-light">Descreva abaixo o projeto na qual você precisa de orçamento:</label>
+                                <textarea id="jl-mensagem" name="Mensagem" rows="8" class="jl-textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-end jl-mar-top-15">
+                            <div class="col-sm-12 col-md-6">
+                                <button class="jl-btn jl-btn-large jl-btn-green jl-btn-block">Enviar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jl-topbar">
         <div class="jl-logo">
@@ -71,11 +128,11 @@
                             of Lorem Ipsum available, but the majority have suffered alteration in some form, by 
                             injected humour, or randomised words which don't look even slightly believable. </p>
                             
-                            <button class="jl-btn jl-btn-large jl-btn-green">Meu botão</button>
+                            <button class="jl-btn jl-btn-large jl-btn-green jl-mar-top-15">solicite um orçamento</button>
                     </div>
                 </div>
             </div>
-
+ 
             <div class="jl-scroll-down">
                 <div class="jl-arrow-down">
                     <img src="imagens/arrow-down.svg" alt="Role a página" />

@@ -5,8 +5,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-p {
+ 
+p, label {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -91,6 +91,71 @@ p {
 
     .jl-preloader-inner {
         margin-top: -45px;
+    }
+
+    .jl-overlay {
+        width: 100%;
+        height: 100vh;
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: rgba(44, 203, 105, 0.95);
+    }
+
+    .jl-modal {
+        width: 800px;
+        display: table;
+        padding: 30px;
+        border-radius: 0 30px 30px 0;
+        position: fixed;
+        top: 15%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1200;
+    }
+
+    .jl-modal-header, .jl-modal-body, .jl-form {
+        width: 100%;
+        display: table;
+        position: relative;
+    }
+
+    .jl-close-modal {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        color: #2CCB69;
+        text-align: center;
+        line-height: center;
+        cursor: pointer;
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        border: none;
+        background-color: #2f2f2f;
+    }
+
+    .jl-form label {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .jl-field, .jl-textarea {
+        width: 100%;
+        border-radius: 4px;
+        background-color: #2f2f2f;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        text-indent: 15px; /*paragráfo para a 1° linha de texto do form*/
+    }
+
+    .jl-field {
+        height: 45px;
     }
 
     .jl-topbar {
@@ -444,7 +509,13 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     transition:  all 0.2s ease-out;
+    text-transform: lowercase;
 }
+
+.jl-btn-block {
+    display: block;
+    width: 100%;
+} 
 
 .jl-btn-medium {
     height: 38px;
