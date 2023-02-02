@@ -37,7 +37,7 @@ for (var i = 0; i < toggleModal.length; i++){
     });
 }
 
-//ANIMANDO ELEMENTOS ON SCROLL COM WAYPOINTS 
+//ANIMANDO ELEMENTO SETA-SCROLL COM WAYPOINTS 
 
 var myScrollDown = document.querySelector('.jl-scroll-down');
 
